@@ -16,7 +16,11 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/electron-updater'),
+=======
+      dir: require('path').join(__dirname, './coverage/electron-starter'),
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },

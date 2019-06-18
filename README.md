@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ElectronUpdater
+=======
+# ElectronStarter
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 

@@ -10,7 +10,11 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+<<<<<<< HEAD
     expect(page.getTitleText()).toEqual('Welcome to electron-updater!');
+=======
+    expect(page.getTitleText()).toEqual('Welcome to electron-starter!');
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
   });
 
   afterEach(async () => {

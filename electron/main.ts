@@ -2,8 +2,12 @@ import { app, BrowserWindow, ipcMain, Menu, dialog } from "electron";
 import * as path from "path";
 import * as url from "url";
 import * as fs from "fs";
+<<<<<<< HEAD
 // import { autoUpdater } from "electron-updater";
 const { autoUpdater } = require("electron-updater");
+=======
+import { autoUpdater } from "electron-updater";
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 
 let win: BrowserWindow, menu;
 
@@ -29,7 +33,11 @@ function createWindow() {
 
   win.loadURL(
     url.format({
+<<<<<<< HEAD
       pathname: path.join(__dirname, `/../../dist/electron-updater/index.html`),
+=======
+      pathname: path.join(__dirname, `/../../dist/electron-starter/index.html`),
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
       protocol: "file:",
       slashes: true
     })

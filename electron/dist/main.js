@@ -4,13 +4,19 @@ var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
 var fs = require("fs");
+<<<<<<< HEAD
 // import { autoUpdater } from "electron-updater";
 var autoUpdater = require("electron-updater").autoUpdater;
+=======
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 var win, menu;
 electron_1.app.on("ready", function () {
     createWindow();
     createMenu();
+<<<<<<< HEAD
     autoUpdater.checkForUpdatesAndNotify();
+=======
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 });
 electron_1.app.on("activate", function () {
     if (win === null) {
@@ -25,7 +31,11 @@ function createWindow() {
         webPreferences: { nodeIntegration: true }
     });
     win.loadURL(url.format({
+<<<<<<< HEAD
         pathname: path.join(__dirname, "/../../dist/electron-updater/index.html"),
+=======
+        pathname: path.join(__dirname, "/../../dist/electron-starter/index.html"),
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
         protocol: "file:",
         slashes: true
     }));
@@ -38,10 +48,13 @@ electron_1.ipcMain.on("getFiles", function (event, arg) {
     var files = fs.readdirSync(__dirname);
     win.webContents.send("getFilesResponse", files);
 });
+<<<<<<< HEAD
 // when the update is ready, notify the BrowserWindow
 autoUpdater.on('update-downloaded', function (info) {
     win.webContents.send('updateReady');
 });
+=======
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 function createMenu() {
     var template = [];
     // Home Menu
@@ -126,7 +139,10 @@ function createMenu() {
     menu = electron_1.Menu.buildFromTemplate(template);
     electron_1.Menu.setApplicationMenu(menu);
 }
+<<<<<<< HEAD
 electron_1.ipcMain.on("quitAndInstall", function (event, arg) {
     autoUpdater.quitAndInstall();
 });
+=======
+>>>>>>> 63402d3b3af05b75b1d330ebbc97a8d637ef6666
 //# sourceMappingURL=main.js.map
